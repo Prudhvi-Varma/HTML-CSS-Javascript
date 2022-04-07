@@ -1,0 +1,23 @@
+h1 {
+    text-align:center ;
+    color:red;
+    background-color: rgb(187, 184, 17);
+    
+}
+
+
+
+
+.div {
+    border: 2px solid blue;
+    text-align: center;
+font-size: 30px;
+background-image: url("./img/RGV2.jpg");
+background-repeat: no-repeat;
+}
+.toc{
+    background-color: azure;
+    color: blueviolet;
+    margin: 20px;
+    padding: 20px;
+}

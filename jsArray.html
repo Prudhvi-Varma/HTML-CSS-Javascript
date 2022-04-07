@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="arrDisplay"></p>
+    <p id="arrDisplay1"></p>
+    <p id="arrDisplay2"></p>
+    <p id="arrDisplay3"></p>
+<script>
+    //first way defineing array
+const trainees =["prudhvi","varma"];
+//second way
+const FrontendTrainees=[];
+FrontendTrainees[0]="prudhvi";
+FrontendTrainees[1]="mahesh";
+FrontendTrainees[2]="phani";
+//third way
+const Arrobject=new Array("kumar","reddy");
+//fourth way
+const Traineemarks={Traineename:"praveen",week1:24}
+
+
+document.getElementById("arrDisplay").innerHTML=trainees.reverse();
+document.getElementById("arrDisplay1").innerHTML=FrontendTrainees.sort();
+document.getElementById("arrDisplay2").innerHTML=Arrobject;
+document.getElementById("arrDisplay3").innerHTML=Traineemarks.Traineename+"<br>"+Traineemarks.week1;
+</script>
+</body>
+</html>

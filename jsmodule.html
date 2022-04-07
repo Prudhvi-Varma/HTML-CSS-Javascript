@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display1"> </p>
+    <script type="module">
+        import{name,location,company,branch} from "./person.js";
+        let details ="my name is"+name + "mo location is"+location +"my company is"+company +"my branch is"+branch;
+        
+        document.getElementById("display1").innerHTML=details;
+    </script>
+</body>
+</html>

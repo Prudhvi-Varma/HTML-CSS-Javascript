@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p> 
+    <p id="demo4"></p> 
+    <p id="demo5"></p> 
+    <p id="demo6"></p> 
+    
+    <script>
+let searchstring="this is zensar zensar training";
+document.getElementById("demo").innerHTML=searchstring.indexOf("zensar");
+document.getElementById("demo1").innerHTML=searchstring.lastIndexOf("zensar");
+document.getElementById("demo2").innerHTML=searchstring.search(/zensar/i);
+document.getElementById("demo3").innerHTML=searchstring.match(/this/is);
+document.getElementById("demo4").innerHTML=searchstring.includes("varma");
+document.getElementById("demo5").innerHTML=searchstring.startsWith("this");
+document.getElementById("demo6").innerHTML=searchstring.endsWith("this");
+
+
+    </script>
+</body>
+</html>

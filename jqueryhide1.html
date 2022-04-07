@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  
+  <script src ="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+</script>
+</head>
+<body>
+ <p id="display1">prudhvivarma</p>
+<button id="line1">hide</button>
+<button id="line2">show</button>
+<script>
+$(document).ready(function(){
+      $("#line1").click(function() {
+          $("#display1").hide();
+        });
+
+        $("#line2").click(function() {
+          $("#display1").show();
+        });
+    });
+</script>
+
+</body>
+</html>

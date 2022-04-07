@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="display1"></p>
+    <p id="display2"></p>
+    <p id="display3"></p>
+    <p id="display4"></p>
+    <p id="display5"></p>
+    <p id="display6"></p>
+    <p id="display7"></p>
+    <script>
+        let number1=10.909999;
+        
+        let number2=1313.4131;
+        let number3=131.41;
+        
+
+        
+        document.getElementById("display1").innerHTML=number1.toString()+
+        "<br>"+(190).toString();
+        document.getElementById("display2").innerHTML=number1.toExponential(2);
+        document.getElementById("display3").innerHTML=number1.toFixed(4);
+        document.getElementById("display4").innerHTML=number1.toPrecision(5);
+        document.getElementById("display5").innerHTML=number1.valueOf();
+        document.getElementById("display6").innerHTML=parseInt(number2);
+        document.getElementById("display7").innerHTML=parseFloat(number3);
+        
+        </script>
+</body>
+</html>

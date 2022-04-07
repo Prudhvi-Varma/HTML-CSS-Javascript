@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="disdate"></p>
+    <p id="disdate1"></p>
+    <p id="disdate2"></p>
+    <p id="demo"></p>
+    <script>
+        
+let date1 =new Date();
+let date2 =new Date(2022,03,28,14,52,24,105);
+let date3 =new Date(1648490000000);
+document.getElementById("disdate").innerHTML=date1.toLocaleString();
+document.getElementById("disdate1").innerHTML=date2.getMonth();
+document.getElementById("disdate2").innerHTML=date3;
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="display1"></h1>
+    <script>
+async function getfile(){
+    let myPromise=new Promise(function(Resolve){
+let request1= new XMLHttpRequest();
+request1.open('GET',"ajax.txt");
+request1.onload=function(){
+    if (request1.status==200){
+        Resolve(request1.responseText);
+    }else{
+       Resolve("Error:"+ request1.status);
+    }
+};
+request1.send();
+    });
+    document.getElementById("display1").innerHTML=await myPromise;
+}
+
+getfile();
+
+
+
+
+
+    </script>
+</body>
+</html>

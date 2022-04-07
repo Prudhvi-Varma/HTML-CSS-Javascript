@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="demo12"></h2>
+    <script>
+ function myfunction(value){
+     document.getElementById("demo12").innerHTML=value;
+ }
+ function getFile(mycallback){
+
+    let request1= new XMLHttpRequest();
+    request1.open('GET',"jsasync.html");
+    request1.onload=function(){
+        if (request1.status=200){
+            myCallback(this.responseText);
+        }else{
+           myCallback("Error:"+ request1.status);
+        }
+    }
+    request1.send();
+ }
+ getFile(myfunction);
+    </script>
+</body>
+</html>

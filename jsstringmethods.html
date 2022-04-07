@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+<p id="demo8"></p>
+
+
+<script>
+let string2= "Tata consultancy services" ;
+document.getElementById("demo").innerHTML=string2.substr(-6);
+
+newstring=string2.replace("Tata","wipro");
+document.getElementById("demo1").innerHTML=string2.replace("Tata","wipro");
+document.getElementById("demo2").innerHTML=string2;
+document.getElementById("demo3").innerHTML= string2.toLocaleLowerCase();
+document.getElementById("demo4").innerHTML=string2.toLocaleUpperCase();
+concatstring=string2.concat("  +<br> +this is prudhvivarma");
+trimstring=concatstring.trim();
+document.getElementById("demo5").innerHTML=concatstring;
+
+document.getElementById("demo6").innerHTML=string2.charAt(5);
+
+document.getElementById("demo7").innerHTML=string2.charCodeAt(1);
+
+const stringarray=string2.split(" ")
+document.getElementById("demo8").innerHTML=stringarray[1];
+
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+
+        <p id="cricket"></p>
+        <p id="cricket1"></p>
+        <p id="cricket2"></p>
+    
+       <script>
+    
+           const cricket = {
+             initialname:"virat",
+             name:"kohli",
+            firstname:" Glenn",
+            lastname:"maxwell",
+               noofbowlers:4,
+               noofbatsmans:6,
+               noofallrounders:1,
+               
+               captainname: function()
+               {
+                return this.initialname+"   "+this.name;
+               },
+            vicecaptainname: function()
+               {
+    
+                   return this.firstname+"  "+this.lastname;
+               },
+               bowlersname: function()
+               {
+    
+                   return this.noofbatsmans+"  "/this.noofallrounders;
+               }
+           };
+          document.getElementById("cricket").innerHTML = cricket.captainname();
+          document.getElementById("cricket1").innerHTML = cricket.vicecaptainname();
+          document.getElementById("cricket2").innerHTML = cricket.bowlersname();
+       </script>  
+</body>
+</html>

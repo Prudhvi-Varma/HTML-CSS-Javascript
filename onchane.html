@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> select graduation you are looking for</p>
+    <select id="selection" onchange="onchangefunction()">
+    <option value="BE">BE</option>
+    <option value="BSC">BSC </option>
+    <option value="BCom">Bcom</option>
+    <option value="Diploma">Diploma</option>
+
+    </select>
+    <p id="demo"></p>
+    <script>
+function onchangefunction(){
+    var selectedvalue=document.getElementById("selection").value;
+document.getElementById("demo").innerHTML="your selection is" +selectedvalue;
+
+
+}
+    </script>
+</body>
+</html>
